@@ -12,16 +12,54 @@ body {
   place-items: center;
 }
 
-div {
-  padding: 3em;
-}
-p {
+p, span {
   font-size: 4vmin;
   color: white;
 }
 
+
 header {
   font-size: 10vmin;
   color: #48c072;
+  align-items: center
+  justify-items:baseline;
 }
 
+a:link {
+  font-size: 4vmin;
+  color: #48c072;
+}
+
+/* visited link */
+a:visited {
+  font-size: 4vmin;
+  color: rgb(37, 170, 177);
+}
+
+/* mouse over link */
+a:hover {
+  font-size: 4vmin;
+  color: hotpink;
+}
+
+#main-text {
+  padding: 3em;
+}
+
+#friends {
+  padding: 2em 0 0 0;
+  color: white;
+}
+
+#friendslist {
+  padding: 0.5em 0 0 0;
+  display: grid;
+  grid-template: "s   s   s" auto
+                 ".   .   ." 1fr 
+                 ".   .   ." 1fr 
+                 ".   .   ." 1fr 
+                 ".   .   ." 1fr /
+                 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  font-size: 4vmin;
+}
