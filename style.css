@@ -54,9 +54,7 @@ a:hover {
 #friendslist {
   padding: 0.5em 0 0 0;
   display: grid;
-  grid-template: "s   s   s" auto
-                 ".   .   ." 1fr 
-                 ".   .   ." 1fr 
+  grid-template: ".   .   ." 1fr 
                  ".   .   ." 1fr 
                  ".   .   ." 1fr /
                  1fr 1fr 1fr;
