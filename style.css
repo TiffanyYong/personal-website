@@ -43,7 +43,7 @@ a:hover {
 }
 
 #main-text {
-  padding: 3em 3em 0 3em;
+  padding: 3em;
 }
 
 #friends {
@@ -54,7 +54,8 @@ a:hover {
 #friendslist {
   padding: 0.5em 0 0 0;
   display: grid;
-  grid-template: ".   .   ." 1fr 
+  grid-template: "s   s   s" 1fr 
+                 ".   .   ." 1fr
                  ".   .   ." 1fr
                  ".   .   ." 1fr
                  1fr 1fr 1fr;
