@@ -55,11 +55,12 @@ a:hover {
   padding: 0.5em 0 0 0;
   display: grid;
   grid-template: "s   s   s" auto
-                 ".   .   ." 1fr
-                 ".   .   ." 1fr
-                 ".   .   ." 1fr
-                 ".   .   ." 1fr
+                 ".   .   ." 1fr 
+                 ".   .   ." 1fr 
+                 ".   .   ." 1fr 
+                 ".   .   ." 1fr /
                  1fr 1fr 1fr;
   grid-gap: 0.5em;
   font-size: 4vmin;
 }
+
