@@ -32,7 +32,7 @@ span {
 }
 
 header {
-  font-size: min(10vwmin, 3.5em);
+  font-size: min(9vmin, 3.5em);
   color: #48c072;
   align-items: center
   justify-items:baseline;
