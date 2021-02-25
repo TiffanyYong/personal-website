@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Motivate Me!</title>
+        <style>
+
+            p {
+                color: rgb(242, 163, 163);
+                text-align: center;
+                font-size: 1.5vw;
+                font-weight: bold;
+                position: relative;
+            }
+
+            body {
+                background-color: rgb(133, 190, 237);
+                padding: 30px;
+                font-family: "Verdana";
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            #welcome {
+              color: rgb(174, 79, 79);
+              top: 50px;
+            }
+            #name {
+              color: rgb(208, 100, 100);
+            }
+
+            #message {
+              font-size: 2.5vw;
+              top: 200px;
+            }
+            #countdown {
+              font-size: 2.5vw;
+              top: 230px;
+            }
+
+            </style>
+        </head>
+
+        <body>
+            <div id = "titles">
+            <p id="welcome">Welcome to <a href="index.html"><span id = "name">Motivate Me</span></a>!</p>
+            </div>
+
+            <p id="message">Shhhh someone is studying!</p>
+            <p id="countdown"></p>
+            <script>
+            var startTime = new Date().getTime(); // record start time
+
+            var x = setInterval(function() { // iterate every second
+              var now = new Date().getTime(); // update time
+              var distance = startTime - now;
+
+              var minutes = Math.floor(25 + (distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor(60 + (distance % (1000 * 60)) / 1000);
+
+              document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
+
+              if (distance < (-25*60*1000)) { // countdown is over
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<a href='breaktime.html'><span style='color: rgb(174, 79, 79)'>BREAKTIME</span></a>";
+              }
+            }, 1000);
+            </script>
+        </body>
+    </html>
