@@ -31,7 +31,7 @@ span {
   padding: 0.2em 0 0 0;
 }
 
-header {
+h1 {
   font-size: min(9vmin, 3.5em);
   color: #48c072;
   align-items: center
@@ -60,7 +60,7 @@ a:hover {
   padding: 3em;
 }
 
-h1 {
+h2 {
   font-size: min(4.7vmin, 2.2em);
   font-weight: 600;
   padding: 1.5em 0 0 0;
