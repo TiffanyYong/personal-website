@@ -1,7 +1,7 @@
 body {
-  --darkbackground: rgb(42, 49, 50);
-  --darktext: white;
-  --darkemph: #48c072;
+  --lightbackground: rgb(247, 252, 253);
+  --lighttext: rgba(0, 0, 0, 0.877);
+  --lightemph: rgb(63, 219, 102);
 }
 
 
@@ -11,7 +11,7 @@ body, html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: rgb(42, 49, 50);
+  background: rgb(247, 252, 253);
 }
 
 body {
@@ -21,30 +21,29 @@ body {
 
 p {
   font-size: min(3.5vmin, 2em);
-  color: white;
+  color: rgba(0, 0, 0, 0.877);
   margin: 1em 0 0 0;
 }
 
 span {
   font-size: min(3.5vmin, 2em);
-  color: white;
+  color: rgba(0, 0, 0, 0.877);
   padding: 0.2em 0 0 0;
 }
 
 h1 {
-  font-size: min(9vmin, 3.5em);
-  color: #48c072;
-  align-items: center
-  justify-items:baseline;
+  font-size: min(9.5vmin, 3.5em);
+  color: rgb(63, 219, 102);
+  align-items: center;
 }
 
 a:link {
-  color: #48c072;
+  color: rgb(63, 219, 102);
 }
 
 /* visited link */
 a:visited {
-  color: rgb(37, 170, 177);
+  color: rgb(14, 73, 95);
 }
 
 /* mouse over link */
@@ -65,12 +64,12 @@ h2 {
   font-weight: 600;
   padding: 1.5em 0 0 0;
   margin: 0;
-  color: white;
+  color: black;
 }
 
 #projectslist {
   padding: 0.5em 0 0 0;
-  color: white;
+  color: black;
   margin: 0;
   display: grid;
   grid-template: "." auto 
@@ -81,7 +80,7 @@ h2 {
 
 #friends {
   padding: 0;
-  color: white;
+  color: black;
 }
 
 #friendslist {
