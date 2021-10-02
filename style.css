@@ -1,5 +1,5 @@
 body {
-  --lightbackground: rgb(245, 250, 252);
+  --lightbackground: rgb(246, 249, 252);
   --lighttext: rgba(0, 0, 0, 0.877);
   --lightemph: rgb(14, 73, 95);
 }
@@ -11,7 +11,7 @@ body, html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: rgb(245, 253, 255);
+  background: rgb(246, 249, 252);
 }
 
 body {
