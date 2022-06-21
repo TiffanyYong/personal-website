@@ -2,11 +2,9 @@
 
 This is my website, work in progress!
 
-Features I want: 
+Features in progress: 
 
-- reactive buttons
-- different tabs for different features
-- linking files to the website
-- being able to put pictures on the website
-- linking other websites to the website
-- my css to hopefully look pretty!
+- updating colour scheme
+- different tabs and reactive buttons
+- pictures
+- fresh new CSS
