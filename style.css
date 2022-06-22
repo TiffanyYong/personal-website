@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@600&display=swap');
+
+
 body {
   --lightbackground: rgb(245, 248, 250);
   --lighttext: rgba(0, 0, 0, 0.877);
@@ -8,7 +11,7 @@ body {
 body, html {
   width: 100%;
   height: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   margin: 0;
   padding: 0;
   rgb(245, 248, 250);
@@ -20,6 +23,8 @@ body {
 
 header {
   background-color: rgb(245, 248, 250);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: max(3vmin, 1em);
   display: flex;
   justify-content: flex-end;
 }
@@ -47,6 +52,7 @@ span {
 }
 
 h1 {
+  font-family: 'Nunito Sans', sans-serif;
   font-size: min(9.5vmin, 3.5em);
   color: rgb(14, 73, 95);
   align-items: center;
