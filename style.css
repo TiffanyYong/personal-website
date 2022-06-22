@@ -1,5 +1,5 @@
 body {
-  --lightbackground: rgb(246, 249, 252);
+  --lightbackground: rgb(245, 248, 250);
   --lighttext: rgba(0, 0, 0, 0.877);
   --lightemph: rgb(14, 73, 95);
 }
@@ -11,18 +11,33 @@ body, html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: rgb(245, 248, 250);
+  rgb(245, 248, 250);
 }
 
 body {
   display: grid;
-  place-items: center;
+}
+
+header {
+  background-color: rgb(245, 248, 250);
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.nav_links li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav_links li:nth-last-child(1) {
+  padding: 0px 3em 0px 20px;
 }
 
 p {
   font-size: min(4vmin, 1.6em);
   color: rgba(0, 0, 0, 0.877);
-  margin: 1em 8vmin 0 8vmin;
+  margin: 0 8vmin 1em 8vmin;
 }
 
 span {
@@ -35,7 +50,7 @@ h1 {
   font-size: min(9.5vmin, 3.5em);
   color: rgb(14, 73, 95);
   align-items: center;
-  margin: 0 8vmin 0 8vmin;
+  margin: 0 8vmin 0.5em 8vmin;
 }
 
 a:link {
@@ -58,13 +73,15 @@ a:hover {
 }
 
 #main-text {
-  padding: 3em;
+  padding: 0em 3em 3em 3em;
+  place-items: center;
+  background: rgb(245, 248, 250)
 }
 
 h2 {
   font-size: min(5vmin, 2.1em);
   font-weight: 600;
-  padding: 1.5em 0 0 0;
+  padding: 0.5em 0 0 0;
   margin: 0 8vmin 0 8vmin;
   color: black;
 }
