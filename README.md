@@ -8,3 +8,4 @@ Features in progress:
 - different tabs and reactive buttons
 - pictures
 - fresh new CSS
+- boxes for projects
