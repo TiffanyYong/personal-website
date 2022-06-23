@@ -25,8 +25,30 @@ header {
   background-color: rgb(245, 248, 250);
   font-family: 'Nunito Sans', sans-serif;
   font-size: max(3vmin, 1em);
+}
+
+nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+nav a {
+  display: inline-block;
+  width: 100%;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  padding: 0vmin 0vmin 0vmin 10vmin;
+}
+
+.logo {
+  cursor: pointer;
+  display: table;
+  max-width: 100%;
 }
 
 
@@ -79,7 +101,7 @@ a:hover {
 }
 
 #main-text {
-  padding: 0em 3em 3em 3em;
+  padding: 3vmin 6vmin 2vmin 6vmin;
   place-items: center;
   background: rgb(245, 248, 250)
 }
@@ -122,4 +144,20 @@ h2 {
 #skills-list ul {
   margin: 0em 2em 0em 2em;
   font-size: min(4vmin, 1.6em);
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(245, 248, 250);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: max(4vmin, 2em);
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 10px 20px;
 }
