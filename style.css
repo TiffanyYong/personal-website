@@ -42,7 +42,7 @@ nav a {
   justify-content: center;
   align-items: center;
   max-width: 25%;
-  padding: 0vmin 0vmin 0vmin 10vmin;
+  padding: 0vmin 0vmin 0vmin min(50px, 5vmin);
 }
 
 .logo {
@@ -51,14 +51,18 @@ nav a {
   max-width: 100%;
 }
 
+.nav_links ul {
+  padding: 0em;
+}
 
 .nav_links li {
   display: inline-block;
-  padding: 10px 20px;
+  font-size: max(1.5vw, 13px);
+  padding: 10px min(2vw, 20px);
 }
 
 .nav_links li:nth-last-child(1) {
-  padding: 0px 3em 0px 20px;
+  padding: 0px 3em 0px min(2vw, 20px);
 }
 
 p {
@@ -101,7 +105,7 @@ a:hover {
 }
 
 #main-text {
-  padding: 3vmin 6vmin 2vmin 6vmin;
+  padding: 3vmin 4vmin 2vmin 4vmin;
   place-items: center;
   background: rgb(245, 248, 250)
 }
@@ -109,7 +113,7 @@ a:hover {
 h2 {
   font-size: min(5vmin, 2.1em);
   font-weight: 600;
-  padding: 0 0 0.5em 0;
+  padding: 1em 0 0.5em 0;
   margin: 0 8vmin 0 8vmin;
   color: black;
 }
