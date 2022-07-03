@@ -9,12 +9,12 @@ body {
 
 
 body, html {
-  width: 100%;
+  width: max(465px, 100%);
   height: 100%;
   font-family: 'IBM Plex Serif', serif;
   margin: 0;
   padding: 0;
-  rgb(245, 248, 250);
+  background-color: rgb(245, 248, 250);
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 header {
   background-color: rgb(245, 248, 250);
   font-family: 'Nunito Sans', sans-serif;
-  font-size: max(3vmin, 1em);
+  font-size: max(3vmin, 16px);
 }
 
 nav {
@@ -57,29 +57,29 @@ nav a {
 
 .nav_links li {
   display: inline-block;
-  font-size: max(1.5vw, 13px);
+  font-size: max(1.8vw, 16px);
   padding: 10px min(2vw, 20px);
 }
 
 .nav_links li:nth-last-child(1) {
-  padding: 0px 3em 0px min(2vw, 20px);
+  padding: 0px min(2vw, 3em) 0px min(2vw, 20px);
 }
 
 p {
-  font-size: min(4vmin, 1.6em);
+  font-size: max(4vmin, 16px);
   color: rgba(0, 0, 0, 0.877);
   margin: 0 8vmin 1em 8vmin;
 }
 
 span {
-  font-size: min(4vmin, 1.6em);
+  font-size: max(4vmin, 16px);
   color: rgba(0, 0, 0, 0.877);
   padding: 0.2em 8vmin 0 8vmin;
 }
 
 h1 {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: min(9.5vmin, 3.5em);
+  font-size: max(9.5vmin, 28px);
   color: rgb(14, 73, 95);
   align-items: center;
   margin: 0 8vmin 0.5em 8vmin;
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .friendlink {
-  font-size: min(4vmin, 1.6em);
+  font-size: max(4vmin, 16px);
   margin: 0 1.3em 0 1.3em;
 }
 
@@ -111,7 +111,7 @@ a:hover {
 }
 
 h2 {
-  font-size: min(5vmin, 2.1em);
+  font-size: max(5vmin, 22px);
   font-weight: 600;
   padding: 1em 0 0.5em 0;
   margin: 0 8vmin 0 8vmin;
@@ -147,14 +147,14 @@ h2 {
 
 #skills-list ul {
   margin: 0em 2em 0em 2em;
-  font-size: min(4vmin, 1.6em);
+  font-size: max(4vmin, 16px);
 }
 
 footer {
   text-align: center;
   background-color: rgb(245, 248, 250);
   font-family: 'Nunito Sans', sans-serif;
-  font-size: max(4vmin, 2em);
+  font-size: max(4vmin, 16px);
 }
 
 footer ul {
