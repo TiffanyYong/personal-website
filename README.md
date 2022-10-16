@@ -1,11 +1,8 @@
-# TiffanyYong.github.io
+# Personal Website
 
 This is my website, work in progress!
 
 Features in progress: 
 
-- updating colour scheme
-- different tabs and reactive buttons
 - pictures
-- fresh new CSS
-- boxes for projects
+- blog maybe?
