@@ -86,12 +86,12 @@ h1 {
 }
 
 a:link {
-  color: rgb(165, 58, 135);
+  color: rgb(14, 73, 95);
 }
 
 /* visited link */
 a:visited {
-  color: rgb(14, 73, 95);
+  color: rgb(165, 58, 135);
 }
 
 /* mouse over link */
