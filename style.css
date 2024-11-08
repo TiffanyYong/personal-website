@@ -24,7 +24,7 @@ body {
 header {
   background-color: rgb(245, 248, 250);
   font-family: 'Nunito Sans', sans-serif;
-  font-size: max(3vmin, 16px);
+  font-size: max(6vmin, 16px);
 }
 
 nav {
