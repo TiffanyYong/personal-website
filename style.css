@@ -106,7 +106,7 @@ a:hover {
 
 #main-text {
   padding: 3vmin 4vmin 2vmin 4vmin;
-  place-items: center;
+  place-items: left;
   background: rgb(245, 248, 250)
 }
 
