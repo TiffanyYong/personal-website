@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Projects</title>
-    <link rel="shortcut icon" href="/../favicon.png" type="image/x-icon">
-    <link href="/../style.css" rel="stylesheet" type="text/css" />
-    <!-- font awesome icons: https://fontawesome.com/v4.7.0/icons/  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Projects</title>
+  <link rel="shortcut icon" href="/../favicon.png" type="image/x-icon">
+  <link href="/../style.css" rel="stylesheet" type="text/css" />
+  <!-- font awesome icons: https://fontawesome.com/v4.7.0/icons/  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
     <header>
       <nav class="nav_links">
         <div class="header-logo">
           <a href="/"><img class="logo" src="/../images/logo-v2.svg" alt="logo"></a>
         </div>
-        <ul>
-          <li><a href="/now">Now</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/favourites">Favourites</a></li>
-          <li><a href="/CV/tiffanyyongcv.pdf">CV</a></li>
-        </ul>
+        <div class="nav-tabs">
+          <a href="/research">Research</a>
+          <a href="/projects">Projects</a>
+          <a href="/CV/tiffanyyongcv.pdf" class="cv-link">CV</a>
+        </div>
       </nav>
     </header>
-    <div id = 'main-text'>
-      <h1>
-        Projects
-      </h1>
-        <div id = 'projectslist'>
-          <span class = 'projectitem'>
-            <a href='/projects/mechanisms-of-financial-contagion.pdf'>Mechanisms of financial contagion</a>, my undergraduate thesis reviewing existing literature on financial contagion in the banking network, and introducing a new theoretical framework to explain relative impacts of different mechanisms of contagion. 
-          </span>
-          <span class = 'projectitem'>
-            Nexus House, a 5-week co-living house in Norden, California. 
-          </span>
-          <span class = 'projectitem'>
-            <a href='https://github.com/TiffanyYong/covid-twitter-discourse/blob/main/report/covid_analysis_report.pdf'>COVID-19 Twitter Discourse Analysis</a>, a report analysing tweet data to understand common topics surrounding COVID-19, and reasons for vaccine hesitancy, with Yufeng and Youyuan. <a href="https://github.com/TiffanyYong/covid-twitter-discourse">
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i></a>
-          </span>
-          <span class = 'projectitem'>
-            <a href='https://github.com/TiffanyYong/discord-modify-automator'>Discord Automator</a>, a bot that automatically clicks to mass create, delete and modify Discord channels and roles, when I got tired of clicking. 
-          </span>
-          <span class = 'projectitem'>
-            <a href='https://tiffanyyong.github.io/sums-notesbank/'>SUMS Notes Bank</a>, a place to contribute notes and find notes for MATH coded classes at McGill University, with Anna. <a href="https://github.com/TiffanyYong/sums-notesbank">
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i></a>
-          </span>
-          <span class='projectitem'>
-            <a href='https://yigf.de/media/background_paper_greening_the_internet.pdf'>Policy suggestions and background paper</a> for the 2020 UN Internet Governance Forum, under the Greening the Internet subgroup for the German Informatics Society. 
-          </span>
-          <span class = 'projectitem'>
-            <a href='https://shereenelaidi.github.io/C-the-speed-of-light/'>C the speed of light</a>, an interactive visualisation of lorentzian transforms in special relativity, with Shereen and Mia. 
-            <a href="https://github.com/ShereenElaidi/C-the-speed-of-light">
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i></a>
-          </span>
-          <span class = 'projectitem'>
-            Epidemic Simulator, an online website that shows a simple model of the exponential spread of a virus, with Shereen, Omar and Alex. 
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i></a>
-          </span>
-        </div>
+
+    <main id="main-text">
+      <h1>Projects</h1>
+      <div id="body-text">
+        <p>
+          <a href='https://nexushouse.co'>Nexus House</a>, a 5-week co-living house in Norden, California.
+        </p>
+        <p>
+          <a href='https://github.com/TiffanyYong/covid-twitter-discourse/blob/main/report/covid_analysis_report.pdf'>COVID-19
+            Twitter Discourse Analysis</a>, a report analysing tweet data to understand common topics surrounding
+          COVID-19, and reasons for vaccine hesitancy, with Yufeng and Youyuan. <a
+            href="https://github.com/TiffanyYong/covid-twitter-discourse"><i class="fa fa-fw fa-github"
+              aria-hidden="true"></i></a>
+        </p>
+        <p>
+          <a href='https://github.com/TiffanyYong/discord-modify-automator'>Discord Automator</a>, a bot that
+          automatically clicks to mass create, delete and modify Discord channels and roles, when I got tired of
+          clicking.
+        </p>
+        <p>
+          <a href='https://tiffanyyong.github.io/sums-notesbank/'>SUMS Notes Bank</a>, a place to contribute notes and
+          find notes for MATH coded classes at McGill University, with Anna. <a
+            href="https://github.com/TiffanyYong/sums-notesbank"><i class="fa fa-fw fa-github"
+              aria-hidden="true"></i></a>
+        </p>
+        <p>
+          <a href='https://yigf.de/media/background_paper_greening_the_internet.pdf'>Policy suggestions and background
+            paper</a> for the 2020 UN Internet Governance Forum, under the Greening the Internet subgroup for the German
+          Informatics Society.
+        </p>
+        <p>
+          <a href='https://shereenelaidi.github.io/C-the-speed-of-light/'>C the speed of light</a>, an interactive
+          visualisation of lorentzian transforms in special relativity, with Shereen and Mia. <a
+            href="https://github.com/ShereenElaidi/C-the-speed-of-light"><i class="fa fa-fw fa-github"
+              aria-hidden="true"></i></a>
+        </p>
+        <p>
+          <a href='https://alexander.iannantuono.org/save-the-north/'>Epidemic Simulator</a>, an online website that
+          shows a simple model of the exponential spread of a virus, with Shereen, Omar and Alex. <a
+            href="https://github.com/ShereenElaidi/C-the-speed-of-light"><i class="fa fa-fw fa-github"
+              aria-hidden="true"></i></a>
+        </p>
+        <p>
+          Coding the ground station descent simulator for the McGill Rocket Team, simulating heatmaps for likely rocket
+          landing spots.
+        </p>
       </div>
-    </div>
+    </main>
+
     <footer>
       <ul>
-        <li><a href="https://www.linkedin.com/in/tiffany-yong-ting-qi/"><i class="fa fa-fw fa-linkedin-square"></i></a></li>
-        <li><a href="https://github.com/TiffanyYong">
-        <i class="fa fa-fw fa-github" aria-hidden="true"></i></a></li>
-        <li><a href="https://twitter.com/TiffanyYongTQ">
-        <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/tiffany-yong-ting-qi/" aria-label="LinkedIn"><i
+              class="fa fa-fw fa-linkedin-square"></i></a></li>
+        <li><a href="https://github.com/TiffanyYong" aria-label="GitHub"><i class="fa fa-fw fa-github"
+              aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/TiffanyYongTQ" aria-label="Twitter"><i class="fa fa-twitter"
+              aria-hidden="true"></i></a></li>
       </ul>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>

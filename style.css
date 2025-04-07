@@ -1,167 +1,226 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 
-
-body {
-  --lightbackground: rgb(245, 248, 250);
-  --lighttext: rgba(0, 0, 0, 0.877);
-  --lightemph: rgb(14, 73, 95);
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('/pp-neue-montreal/ppneuemontreal-book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('/pp-neue-montreal/ppneuemontreal-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
 
-body, html {
-  width: max(465px, 100%);
-  height: 100%;
-  font-family: 'IBM Plex Serif', serif;
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('/pp-neue-montreal/ppneuemontreal-italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('/pp-neue-montreal/ppneuemontreal-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('/pp-neue-montreal/ppneuemontreal-semibolditalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('/pp-neue-montreal/ppneuemontreal-thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+:root {
+  --light-background: #FAFCFF;
+  --font-family: 'PP Neue Montreal', sans-serif;
+  --font-size: 16px;
+  --max-width: 48rem;
+  --side-margin: 1rem;
+  --header-padding: 1.5rem;
+  --nav-gap: 1.5rem;
+  --logo-size: 2.5rem;
+  --headshot-size: 250px;
+  --hover-color: #555;
+  --link-color: rgb(14, 73, 95);
+}
+
+html, body {
   margin: 0;
   padding: 0;
-  background-color: rgb(245, 248, 250);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  background-color: var(--light-background);
 }
 
 body {
-  display: grid;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  padding: 0 var(--side-margin);
+  box-sizing: border-box;
 }
 
 header {
-  background-color: rgb(245, 248, 250);
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: max(6vmin, 16px);
+  padding: var(--header-padding) 0;
+  background-color: var(--light-background);
 }
 
-nav {
+.nav_links {
   display: flex;
   justify-content: space-between;
-}
-
-nav a {
-  display: inline-block;
-  width: 100%;
+  align-items: center;
 }
 
 .header-logo {
   display: flex;
-  justify-content: center;
   align-items: center;
-  max-width: 25%;
-  padding: 0vmin 0vmin 0vmin min(50px, 5vmin);
 }
 
 .logo {
+  height: var(--logo-size);
   cursor: pointer;
-  display: table;
-  max-width: 100%;
+  margin-right: var(--side-margin);
 }
 
-.nav_links ul {
-  padding: 0em;
+.nav-tabs {
+  display: flex;
+  gap: var(--nav-gap);
 }
 
-.nav_links li {
-  display: inline-block;
-  font-size: max(2vmin, 16px);
-  padding: 10px min(2vw, 20px);
+.nav-tabs a {
+  text-decoration: underline;
+  font-weight: normal;
 }
 
-.nav_links li:nth-last-child(1) {
-  padding: 0px min(2vw, 3em) 0px min(2vw, 20px);
+.cv-link::after {
+  content: " \2197"; /* Unicode for northeast arrow */
+  font-size: 0.9em;
+}
+
+main#main-text {
+  margin-top: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#author-card {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.headshot {
+  width: var(--headshot-size);
+  border-radius: 0;
+}
+
+#body-text {
+  text-align: left;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 p {
-  font-size: max(3vmin, 16px);
+  margin-bottom: 1em;
   color: rgba(0, 0, 0, 0.877);
-  margin: 0 4vmin 1em 4vmin;
-}
-
-span {
-  font-size: max(3vmin, 16px);
-  color: rgba(0, 0, 0, 0.877);
-  padding: 0.2em 4vmin 0 4vmin;
 }
 
 h1 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: max(6vmin, 28px);
-  color: rgb(14, 73, 95);
-  align-items: center;
-  margin: 0 4vmin 0.5em 4vmin;
+  font-size: 1.75rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
 }
 
-a:link {
-  color: rgb(14, 73, 95);
+a {
+  color: var(--link-color);
+  text-decoration: underline; 
 }
 
-/* visited link */
-a:visited {
-  color: rgb(165, 58, 135);
-}
-
-/* mouse over link */
 a:hover {
-  color: hotpink;
+  color: var(--hover-color);
 }
 
-.friendlink {
-  font-size: max(3vmin, 16px);
-  margin: 0 1.3em 0 1.3em;
+a:hover, .toggle-abstract:hover {
+  color: var(--hover-color);
 }
 
-#main-text {
-  padding: 3vmin 4vmin 2vmin 4vmin;
-  place-items: left;
-  background: rgb(245, 248, 250)
-}
-
-h2 {
-  font-size: max(4vmin, 22px);
-  font-weight: 600;
-  padding: 1em 0 0.5em 0;
-  margin: 0 4vmin 0 4vmin;
+.toggle-abstract {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid black;
   color: black;
+  transition: all 0.2s ease-in-out;
+  width: 70px;
+  font-size: 0.9rem;
 }
 
-#projectslist {
-  padding: 0.5em 0 0 0;
-  color: black;
-  margin: 0;
-  display: grid;
-  grid-template: "." auto 
-                 "." auto /
-                 auto;
-  grid-gap: 0.7em;
+.toggle-abstract:hover {
+  background-color: black;
+  color: white;
 }
 
-#friends {
-  padding: 0;
-  color: black;
+.abstract {
+  display: none;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-#friendslist {
-  margin: 0 0 0 4vmin;
-  padding: 0.5em 0 0 0;
-  display: grid;
-  grid-template: ".   .   ." auto 
-                 ".   .   ." auto 
-                 ".   .   ." auto /
-                 1fr 1fr 1fr;
-  grid-gap: 0.8em 0.2em;
+.misc-item {
+  margin-bottom: 1.5rem;
 }
 
-#skills-list ul {
-  margin: 0em 2em 0em 2em;
-  font-size: max(3vmin, 16px);
+.misc-item b {
+  font-weight: 480;
 }
+
+.misc-item em {
+  font-weight: 200;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 
 footer {
+  margin-top: 2.5rem;
   text-align: center;
-  background-color: rgb(245, 248, 250);
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: max(4vmin, 16px);
+  background-color: var(--light-background);
 }
 
 footer ul {
+  list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
 }
 
-footer li {
-  display: inline-block;
-  padding: 10px 20px;
+footer a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
 }

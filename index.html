@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Tiffany Yong</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <!-- font awesome icons: https://fontawesome.com/v4.7.0/icons/  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tiffany Yong</title>
+  <link rel="icon" href="favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/path-to-dark-mode-favicon.ico" type="image/x-icon" media="(prefers-color-scheme: dark)">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- font awesome icons: https://fontawesome.com/v4.7.0/icons/  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
     <header>
       <nav class="nav_links">
         <div class="header-logo">
           <a href="/"><img class="logo" src="images/logo-v2.svg" alt="logo"></a>
         </div>
-        <ul>
-          <li><a href="/now">Now</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/favourites">Favourites</a></li>
-          <li><a href="/CV/tiffanyyongcv.pdf">CV</a></li>
-        </ul>
+        <div class="nav-tabs">
+          <a href="/research">Research</a>
+          <a href="/projects">Projects</a>
+          <a href="/miscellaneous">Misc.</a>
+          <a href="/CV/tiffanyyongcv.pdf" class="cv-link">CV</a>
+        </div>
       </nav>
     </header>
-    <div id = 'main-text'>
-      <p>
-        I'm currently a Junior Research Scientist at New York University, working on climate finance at the Volatility and Risk Institute supervised by Johannes Stroebel.
-      </p>
-      <p>
-        I received my B.A. in Economics and Mathematics from McGill University, in Montreal, Canada.
-      </p>
-      <p>
-        I am particularly interested in game theory and the effect of incentive structures in an uncertain information environment. I am currently working on research relating to optimal climate policy and systemic risk in the banking system.
-      </p>
-      <p>
-        In my free time, I enjoy playing percussion instruments, bouldering, explore NYC's amazing food scene, biking to new places, and hiking!
-      </p>
-      <p>
-        Feel free to reach out and chat about any of the above!
-      </p>
-      <div id = 'friends'>
-        <h2>
-          My friends:
-        </h2>
-        <div id = 'friendslist'>
-          <a href="https://elinorp-d.github.io/" class = 'friendlink'>Elinor Poole-Dayan</a>
-          <a href="https://abrandenberger.github.io/" class = 'friendlink'>Anna Brandenberger</a>
-          <a href="https://axiomofchoice.dev/" class = 'friendlink'>Jacob Reznikov</a>
-          <a href="https://aidangomar.net/" class = 'friendlink'>Aidan Gomar</a>
-          <a href="https://louismeunier.net/" class = 'friendlink'>Louis Meunier</a>
-          <a href="https://shereenelaidi.github.io/" class = 'friendlink'>Shereen Elaidi</a>
-          <a href="https://stephenfay.xyz/" class = 'friendlink'>Stephen Fay</a>
-          <a href="https://ghiliweld.github.io/" class = 'friendlink'>Ghili Weld</a>
-          <a href="https://diegolopez.me/" class = 'friendlink'>Diego Lopez</a>
-          <a href="https://sites.google.com/view/yxinlin/home" class = 'friendlink'>Celine Yuan</a>
-          <a href="https://ayushk.dev/" class = 'friendlink'>Ayush Kumar</a>
-          <a href="https://gabrielamp.github.io/" class = 'friendlink'>Gabriela Moisescu-Pareja</a>
-          <a href="https://maiadd.github.io/" class = 'friendlink'>Maia Darmon</a>
-          <a href="https://daocheny.github.io/" class = 'friendlink'>Dao Chen Yuan</a>
-          <a href="https://mytran2111.github.io/" class = 'friendlink'>Mia Tran</a>
-          <a href="https://alexander.iannantuono.org/" class = 'friendlink'>Alex Iannantuono</a>
-        </div>
+
+    <main id="main-text">
+      <div id="author-card">
+        <img class="headshot" src="images/headshot_cropped.JPG" alt="headshot">
       </div>
-    </div>
+      <div id="body-text">
+        <p>
+          I'm currently a Junior Research Scientist at New York University, working on climate finance at the Volatility
+          and Risk Institute supervised by <a href="https://pages.stern.nyu.edu/~jstroebe/">Johannes Stroebel</a> and <a
+            href="https://pages.stern.nyu.edu/~tkuchler/">Theresa Kuchler</a>.
+        </p>
+        <p>
+          I received my B.A. in Economics and Mathematics from McGill University, in Montreal, Canada.
+        </p>
+        <p>
+          I am particularly interested in game theory and the effect of incentive structures in an uncertain information
+          environment. I am currently working on research relating to optimal climate policy and systemic risk in the
+          banking system.
+        </p>
+        <p>
+          In my free time, I enjoy playing percussion instruments, bouldering, and exploring NYC's amazing food scene,
+          biking to
+          new places, and hiking!
+        </p>
+        <p>
+          Feel free to reach out and chat about any of the above!
+        </p>
+      </div>
+    </main>
+
     <footer>
       <ul>
-        <li><a href="https://www.linkedin.com/in/tiffany-yong-ting-qi/"><i class="fa fa-fw fa-linkedin-square"></i></a></li>
-        <li><a href="https://github.com/TiffanyYong">
-        <i class="fa fa-fw fa-github" aria-hidden="true"></i></a></li>
-        <li><a href="https://twitter.com/TiffanyYongTQ">
-        <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/tiffany-yong-ting-qi/" aria-label="LinkedIn"><i
+              class="fa fa-fw fa-linkedin-square"></i></a></li>
+        <li><a href="https://github.com/TiffanyYong" aria-label="GitHub"><i class="fa fa-fw fa-github"
+              aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/TiffanyYongTQ" aria-label="Twitter"><i class="fa fa-twitter"
+              aria-hidden="true"></i></a></li>
       </ul>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
