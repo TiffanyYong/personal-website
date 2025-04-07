@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Projects</title>
+  <link rel="shortcut icon" href="/../favicon.png" type="image/x-icon">
+  <link href="/../style.css" rel="stylesheet" type="text/css" />
+  <!-- font awesome icons: https://fontawesome.com/v4.7.0/icons/  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="nav_links">
+        <div class="header-logo">
+          <a href="/"><img class="logo" src="/../images/logo-v2.svg" alt="logo"></a>
+        </div>
+        <div class="nav-tabs">
+          <a href="/research">Research</a>
+          <a href="/projects">Projects</a>
+          <a href="/miscellaneous">Misc.</a>
+          <a href="/CV/tiffanyyongcv.pdf" class="cv-link">CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-text">
+      <h1>Research</h1>
+      <div id="body-text">
+        <p>
+          <a href='https://www.nber.org/papers/w33413'>Climate Transition Risks and the Energy Sector</a>, with Viral
+          Acharya, Stefano Giglio, Stefano Pastore, Johannes
+          Stroebel and Zhenhao Tan
+          <br><span class="toggle-abstract" onclick="toggleAbstract(this)">[+] Abstract</span>
+          <span class="abstract">We build a general equilibrium model to study how climate transition risks affect
+            energy prices and the valuations of different firms in the energy sector. We consider two types of fossil
+            fuel firms: incumbents that have developed oil reserves they can extract today or tomorrow, and new entrants
+            that must invest in exploration and drilling today to have reserves to potentially extract tomorrow. There
+            are also renewable energy firms that produce emission-free energy but cannot currently serve
+            non-electrifiable sectors of the economy. We analyze three sources of climate transition risk: (i) changes
+            in the probability of a technological breakthrough that allows renewable energy firms to serve all economic
+            sectors; (ii) changes in expected future taxes on carbon emissions; and (iii) restrictions on today's
+            development of additional fossil fuel production capacity. We show that different transition risks—and,
+            importantly, uncertainty about their realizations—have distinct effects on firms' decisions, on their
+            valuations, and on equilibrium energy prices. We provide empirical support for the heterogeneous effects of
+            different transition risks on energy prices and stock returns of firms in different energy
+            sub-sectors.</span>
+        </p>
+
+        <p>
+          <a href='/research/'>Mechanisms of financial contagion</a>, my
+          undergraduate thesis reviewing existing literature on financial contagion in the banking network, and
+          introducing a new theoretical framework to explain relative impacts of different mechanisms of contagion.
+          <br><span class="toggle-abstract" onclick="toggleAbstract(this)">[+] Abstract</span>
+          <span class="abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nisl nec leo pharetra
+            fermentum. Pellentesque habitant morbi tristique.</span>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/tiffany-yong-ting-qi/" aria-label="LinkedIn"><i
+              class="fa fa-fw fa-linkedin-square"></i></a></li>
+        <li><a href="https://github.com/TiffanyYong" aria-label="GitHub"><i class="fa fa-fw fa-github"
+              aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/TiffanyYongTQ" aria-label="Twitter"><i class="fa fa-twitter"
+              aria-hidden="true"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script>
+    function toggleAbstract(element) {
+      const abstract = element.nextElementSibling;
+      if (abstract.style.display === 'block') {
+        abstract.style.display = 'none';
+        element.textContent = '[+] Abstract';
+      } else {
+        abstract.style.display = 'block';
+        element.textContent = '[-] Abstract';
+      }
+    }
+  </script>
+</body>
+
+</html>
