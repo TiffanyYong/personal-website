@@ -115,7 +115,7 @@ header {
 }
 
 main#main-text {
-  margin-top: 1.5rem;
+  margin-top: 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -191,20 +191,16 @@ a:hover, .toggle-abstract:hover {
 
 .misc-item {
   margin-bottom: 1.5rem;
+  font-weight: normal;
 }
 
 .misc-item b {
   font-weight: 480;
 }
 
-.misc-item em {
-  font-weight: 200;
-}
-
 .nowrap {
   white-space: nowrap;
 }
-
 
 footer {
   margin-top: 2.5rem;
@@ -250,10 +246,6 @@ footer a {
 
   header {
     margin-bottom: 0rem;
-  }
-
-  main#main-text {
-    margin-top: 0rem;
   }
 
   footer {
