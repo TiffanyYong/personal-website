@@ -1,14 +1,10 @@
 const getFaviconFormat = () => {
     const link = document.createElement('link');
-
     const supportsSvg = link.relList && link.relList.supports && link.relList.supports('icon') && !!document.createElementNS;
     if (supportsSvg) return 'svg';
-
+    
     const canvas = document.createElement('canvas');
-    const supportsPng = !!(canvas.getContext && canvas.getContext('2d'));
-    if (supportsPng) return 'png';
-
-    return 'ico';
+    return !!(canvas.getContext && canvas.getContext('2d')) ? 'png' : 'ico';
   };
 
   const setFavicon = (scheme) => {
@@ -29,13 +25,12 @@ const getFaviconFormat = () => {
       type = 'image/x-icon';
     }
 
-    favicon.href = filename;
+    favicon.href = `/favicons/${filename}`;
     favicon.type = type;
   };
 
   const match = window.matchMedia('(prefers-color-scheme: dark)');
   setFavicon(match.matches ? 'dark' : 'light');
-
   match.addEventListener('change', (e) => {
     setFavicon(e.matches ? 'dark' : 'light');
   });
