@@ -225,6 +225,11 @@ a:hover, .toggle-abstract:hover {
   border-radius: 4px;
 }
 
+.caption {
+  margin-top: 5px;
+  font-size: 0.95em;
+  color: #555;
+}
   
 footer {
   margin-top: 2.5rem;
