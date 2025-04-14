@@ -202,6 +202,30 @@ a:hover, .toggle-abstract:hover {
   white-space: nowrap;
 }
 
+#photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-item {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+  
 footer {
   margin-top: 2.5rem;
   text-align: center;
