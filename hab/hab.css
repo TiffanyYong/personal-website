@@ -35,7 +35,7 @@ html, body {
 /* Bottom controls bar ------------------------------------------ */
 
 #controls {
-  padding: 10px 80px 16px 56px;   /* RIGHT padding 80 instead of 56 */
+  padding: 10px 80px 16px 56px;
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -52,8 +52,6 @@ html, body {
   gap: 6px;
   position: relative;
 }
-
-/* "Timeline (month):" label */
 
 #slider-block::before {
   content: "Timeline (month):";
@@ -121,8 +119,6 @@ html, body {
 
 #month-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  /* track = 10px, thumb = 14px → (10 - 14)/2 = -2;
-     visually it sits a little low, so shift 1px more */
   margin-top: -3px;
   width: 14px;
   height: 14px;
@@ -145,7 +141,7 @@ html, body {
   border: 1px solid #444;
   background: #ffffff;
   box-shadow: none;
-  transform: translateY(-2px);  /* nudge up to sit in the middle of 10px track */
+  transform: translateY(-2px);
 }
 
 /* Year ticks just under slider -------------------------------- */
@@ -225,7 +221,6 @@ html, body {
   border: 1px solid #444;
 }
 
-/* dot colors matching your R app */
 .swatch-0 { background: transparent; border-style: dashed; }
 .swatch-1 { background: #ffffff; }
 .swatch-2 { background: #ffff00; }
