@@ -1,0 +1,233 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header ------------------------------------------------------- */
+
+#app-header {
+  padding: 12px 24px 8px 24px;
+  border-bottom: 1px solid #ddd;
+  background: #ffffff;
+}
+
+/* Slightly larger title */
+#app-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 650;
+}
+
+/* Map ---------------------------------------------------------- */
+
+#map {
+  flex: 1;
+}
+
+/* Bottom controls bar ------------------------------------------ */
+
+#controls {
+  padding: 10px 80px 16px 56px;   /* RIGHT padding 80 instead of 56 */
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border-top: 1px solid #ddd;
+  background: #fafafa;
+}
+
+/* Slider block: label + slider + ticks */
+
+#slider-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+/* "Timeline (month):" label */
+
+#slider-block::before {
+  content: "Timeline (month):";
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+
+/* Endpoints row above slider */
+
+#top-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #555;
+  padding-bottom: 2px;
+}
+
+#min-month-label,
+#max-month-label {
+  font-weight: 400;
+  white-space: nowrap;
+  position: relative;
+  top: 6px;
+}
+
+/* Moving month bubble that follows the slider ------------------ */
+
+#month-display {
+  position: absolute;
+  top: 30px;
+  transform: translateX(-50%);
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  pointer-events: none;
+  z-index: 2;
+}
+
+
+/* Slider ------------------------------------------------------- */
+
+#month-slider {
+  width: 100%;
+  accent-color: #1f78b4;
+  margin-top: 10px;
+}
+
+#month-slider:focus,
+#month-slider:focus-visible {
+  outline: none;
+}
+
+/* Thicker, easier bar */
+
+#month-slider::-webkit-slider-runnable-track {
+  background: #e0e6f2;
+  border-radius: 4px;
+  height: 10px;
+  box-shadow: none;
+}
+
+#month-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* track = 10px, thumb = 14px → (10 - 14)/2 = -2;
+     visually it sits a little low, so shift 1px more */
+  margin-top: -3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #444;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+#month-slider::-moz-range-track {
+  background: #e0e6f2;
+  border-radius: 4px;
+  height: 10px;
+}
+
+#month-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #444;
+  background: #ffffff;
+  box-shadow: none;
+  transform: translateY(-2px);  /* nudge up to sit in the middle of 10px track */
+}
+
+/* Year ticks just under slider -------------------------------- */
+
+#year-ticks {
+  position: relative;
+  height: 16px;
+  margin-top: 4px;
+  font-size: 0.7rem;
+  color: #777;
+}
+
+#year-ticks span {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/* Play button -------------------------------------------------- */
+
+#play-button {
+  min-width: 40px;
+  padding: 4px 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* OLD: margin-top: 40px; */
+  margin-top: 53px;
+}
+
+
+#play-button:hover {
+  background: #f0f0f0;
+}
+
+#play-button i {
+  font-size: 14px;
+}
+
+/* Legend ------------------------------------------------------- */
+
+.hab-legend {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.hab-legend-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hab-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.hab-legend-row:last-child {
+  margin-bottom: 0;
+}
+
+.hab-legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #444;
+}
+
+/* dot colors matching your R app */
+.swatch-0 { background: transparent; border-style: dashed; }
+.swatch-1 { background: #ffffff; }
+.swatch-2 { background: #ffff00; }
+.swatch-3 { background: #ffa500; }
+.swatch-4 { background: #ff0000; }
