@@ -32,6 +32,11 @@ html, body {
   flex: 1;
 }
 
+.leaflet-container:focus,
+.leaflet-container:focus-visible {
+  outline: none;
+}
+
 /* Bottom controls bar ------------------------------------------ */
 
 #controls {
@@ -107,8 +112,6 @@ html, body {
 #month-slider:focus-visible {
   outline: none;
 }
-
-/* Thicker, easier bar */
 
 #month-slider::-webkit-slider-runnable-track {
   background: #e0e6f2;
