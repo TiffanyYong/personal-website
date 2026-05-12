@@ -194,6 +194,7 @@ a:hover, .toggle-abstract:hover {
   width: 1em;
   height: 1em;
   vertical-align: -0.125em;
+  user-select: none;
 }
 
 .misc-item {
