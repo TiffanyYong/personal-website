@@ -189,6 +189,11 @@ a:hover, .toggle-abstract:hover {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.custom-icon {
+  width: 1em;
+  height: 1em;
+}
+
 .misc-item {
   margin-bottom: 1.5rem;
   font-weight: normal;
